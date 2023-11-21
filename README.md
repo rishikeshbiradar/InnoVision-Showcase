@@ -1,12 +1,6 @@
-Certainly! Here's a sample about text for your InnoVision-Showcase repository on GitHub:
-
----
-
 # InnoVision Showcase
 
 Welcome to InnoVision Showcase - where creativity meets technology, and ideas come to life! 🚀✨
-
-## Overview
 
 InnoVision Showcase is my personal portfolio, crafted with HTML, CSS, JavaScript, jQuery, and Bootstrap in the frontend, and powered by Node.js, Express.js, MongoDB, and Mongoose in the backend. This repository serves as a digital canvas to showcase my journey, projects, and skills, reflecting the intersection of design and innovation.
 
