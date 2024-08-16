@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rushikesh Biradar</title>
-    <link rel="icon" href="images/logo_icon.jpg" type="image/x-icon">
+    <title>Rushikesh Biradar - Software Developer & Full Stack Developer</title>
+    <meta name="description" content="Passionate and dedicated Software Developer & Full Stack Developer with expertise in Artificial Intelligence & Machine Learning.">
+
+    <!-- Add more meta tags as needed -->
+    <meta name="keywords" content="Rushikesh Biradar, Rushikesh Biradar Pccoe, pccoe, pccoepune, Software Developer, Full Stack Developer, AI, Machine Learning, Pimpri Chinchwad College of Engineering, Nigdi, Pune , Rushikesh Shivaji Biradar">
+    <meta name="author" content="Rushikesh Biradar">
+    <meta name="google-site-verification" content="BeWPYPtIxOCU4DRZqYz5XWErvj0Bx8H3yXWoJMM3oLc" />
+    <link rel="icon" href="Images/Logo.jpg" type="image/x-icon">
 
     <!-- CSS stylesheet Link -->
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +20,10 @@
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
+    <!-- Email JS Link -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
     <!-- JQuery Link -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -21,10 +31,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
 
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Rushikesh<span>Biradar.</span></a></div>
@@ -33,7 +46,7 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -43,6 +56,9 @@
     </nav>
 
     <!-- home section start -->
+    <video autoplay loop muted plays-inline class="Background_Video">
+        <source src="Background_Video.mp4" type="video/mp4">
+    </video>
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -54,72 +70,231 @@
         </div>
     </section>
 
+
+
     <!-- about section start -->
-    <section class="about" id="about">
+    <section data-aos="fade-up" class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile_photo.jpg" alt="">
+                <div data-aos="fade-right" class="culumn left">
+                    <img src="Images/Profile_Photo.jpg" alt="">
                 </div>
-                <div class="column right">
+                <div data-aos="fade-left" class="culumn right">
                     <div class="text">I'm Rushikesh & I'm <span class="typing-2"></span></div>
                     <p>Greetings! I'm Rushikesh Shivaji Biradar, currently pursuing B.Tech in Computer Science &
                         Engineering with specialization in Artificial Intelligence & Machine Learning at Pimpri
-                        Chichwad College Of Engineering (PCCOE),Pune. A passionate and dedicated Full Stack Developer
-                        with a flair for crafting innovative and user-centric solutions. Throughout my career, I've been
+                        Chichwad College Of Engineering (PCCOE),Pune. A passionate and dedicated Software Developer &
+                        Full Stack Developer
+                        with a flair for crafting innovative and user-centric sulutions. Throughout my career, I've been
                         driven by the desire to create seamless and robust web applications that make a positive impact
-                        on users and businesses alike</p>
-                    <a href="https://drive.google.com/file/d/1eW3vvndfAzE7l1JajJo4wXfTeFhE2Wbc/view?usp=sharing"
-                        target=”_blank”>Download CV</a>
+                        on users and businesses alike.</p>
+                    <a href="https://drive.google.com/file/d/1302z2nSiLd3Iu7XT-tcxE37jiCYd2T8-/view?usp=sharing"
+                        target=”_blank”>Download Resume</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
+    <!-- Projects section start -->
+    <section class="projects" id="projects">
+        <div data-aos="fade-up" class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Designing</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
-                        </p>
+                        <img src="/Project_Images/CourseConnect.png" alt="">
+                        <div class="text"><a class="projectTitle" href="/" target=”_blank”>CourseConnect</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">React JS</button>
+                                <button class="btn">Node JS</button>
+                                <button class="btn">Express JS</button>
+                                <button class="btn">MongoDB</button>
+                                <button class="btn">Machine Learning</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/CourseConnect" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github "></i></a>
+                                <a href="/" target="_blank"><img src="/Project_Images/Link.png" alt=""
+                                        style="height: 25px;width: 25px; margin: 5px;"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
+                        <img src="/Project_Images/EchoCare.jpeg" alt="">
+                        <div class="text"><a class="projectTitle" href="https://vbprs.netlify.app/"
+                                target=”_blank”>EchoCare</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">Selenium</button>
+                                <button class="btn">Node JS</button>
+                                <button class="btn">Express JS</button>
+                                <button class="btn">MongoDB</button>
+                                <button class="btn">Machine Learning</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/EchoCare" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github"></i></a>
+                                <a href="https://vbprs.netlify.app/" target="_blank"><img src="/Project_Images/Link.png"
+                                        alt="" style="height: 25px;width: 25px; margin: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/Project_Images/NoteNook.jpg" alt="">
+                        <div class="text"><a class="projectTitle" href="https://workscheduler.netlify.app/"
+                                target=”_blank”>NoteNook</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">React JS</button>
+                                <button class="btn">Node JS</button>
+                                <button class="btn">Express JS</button>
+                                <button class="btn">MongoDB</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/NoteNook" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github"></i></a>
+                                <a href="https://workscheduler.netlify.app/" target="_blank"><img
+                                        src="/Project_Images/Link.png" alt=""
+                                        style="height: 25px;width: 25px; margin: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="Project_Images/AeroBook.webp" alt="">
+                        <div class="text"><a class="projectTitle" href="/" target=”_blank”>AeroBook</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">C++</button>
+                                <button class="btn">OOP</button>
+                                <button class="btn">DSA</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/AeroBook" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github" style="color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="Project_Images/BookBorrower.jpeg" alt="">
+                        <div class="text"><a class="projectTitle" href="/" target=”_blank”>BookBorrower</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">Python</button>
+                                <button class="btn">OOP</button>
+                                <button class="btn">DSA</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/BookBorrower" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github" style="color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="Project_Images/TeslaBotAI.jpeg" alt="">
+                        <div class="text"><a class="projectTitle" href="/" target=”_blank”>TeslaBotAI</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">Python</button>
+                                <button class="btn">Artificial Intelligence</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/TeslaBotAI" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github" style="color: white;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="Project_Images/TaskTracer.jpg" alt="">
+                        <div class="text"><a class="projectTitle" href="https://todulist555.web.app"
+                                target=”_blank”>TaskTracer</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">HTML</button>
+                                <button class="btn">CSS</button>
+                                <button class="btn">JavaScript</button>
+                                <button class="btn">JQuery</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/TaskTracer" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github"></i></a>
+                                <a href="https://todulist555.web.app" target="_blank"><img
+                                        src="/Project_Images/Link.png" alt=""
+                                        style="height: 25px;width: 25px; margin: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="Project_Images/Password_Generator.jpg" alt="">
+                        <div class="text"><a class="projectTitle" href="https://passwordgenerator5.web.app/"
+                                target=”_blank”>Password
+                                Generator</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">HTML</button>
+                                <button class="btn">CSS</button>
+                                <button class="btn">JavaScript</button>
+                                <button class="btn">JQuery</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/Password-Generator" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github"></i></a>
+                                <a href="https://passwordgenerator5.web.app/" target="_blank"><img
+                                        src="/Project_Images/Link.png" alt=""
+                                        style="height: 25px;width: 25px; margin: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="Project_Images/Calculator.png" alt="">
+                        <div class="text"><a class="projectTitle" href="https://freeonlinecalculator-96b65.web.app/"
+                                target=”_blank”>Calculator</a></div>
+                        <div class="project_buttons">
+                            <div class="buttons">
+                                <button class="btn">HTML</button>
+                                <button class="btn">CSS</button>
+                                <button class="btn">JavaScript</button>
+                                <button class="btn">JQuery</button>
+                            </div>
+                            <div class="project_links">
+                                <a href="https://github.com/rishikeshbiradar/Calculator" target="_blank"><i
+                                        class="project_github_link fab fa-lg fa-github"></i></a>
+                                <a href="https://freeonlinecalculator-96b65.web.app/" target="_blank"><img
+                                        src="/Project_Images/Link.png" alt=""
+                                        style="height: 25px;width: 25px; margin: 5px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="text">Web Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Web Deployment</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
-                        </p>
-                    </div>
-                </div>
             </div>
-        </div>
         </div>
     </section>
 
     <!-- skills section start -->
     <section class="skills" id="skills">
-        <div class="max-width">
+        <div data-aos="fade-up" class="max-width">
             <h2 class="title">My skills</h2>
             <div class="skills-content">
 
-                <!-- Without Percentage -->
-                <div class="column right">
+                <div data-aos="fade-right" class="column right">
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
@@ -163,7 +338,7 @@
                         <div class="line html"></div>
                     </div>
                 </div>
-                <div class="column right">
+                <div data-aos="fade-down" class="column right">
                     <div class="bars">
                         <div class="info">
                             <span>Node JS</span>
@@ -173,6 +348,12 @@
                     <div class="bars">
                         <div class="info">
                             <span>Express JS</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>REST API</span>
                         </div>
                         <div class="line html"></div>
                     </div>
@@ -200,14 +381,8 @@
                         </div>
                         <div class="line html"></div>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>REST API</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
                 </div>
-                <div class="column right">
+                <div data-aos="fade-left" class="column right">
                     <div class="bars">
                         <div class="info">
                             <span>C/C++</span>
@@ -255,96 +430,133 @@
         </div>
     </section>
 
-    <!-- Projects section start -->
-    <section class="teams" id="projects">
-        <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
+    <!-- services section start -->
+    <section class="experience" id="experience">
+        <div data-aos="fade-up" class="max-width">
+            <h2 class="title">My Experience</h2>
+            <div class="serv-content">
+                <div data-aos="fade-right" class="card">
                     <div class="box">
-                        <img src="Background_Images/Password_Generator_BG.jpg" alt="">
-                        <div class="text"><a class="projectTitle" href="https://passwordgenerator5.web.app/"
-                                target=”_blank”>Password
-                                Generator</a></div>
-                        <div class="buttons">
-                            <button class="btn">HTML</button>
-                            <button class="btn">CSS</button>
-                            <button class="btn">JavaScript</button>
-                            <button class="btn">JQuery</button>
-                            <button class="btn">DOM</button>
+                        <div class="box1">
+                            <div class="duration">Sep 2023 - Oct 2023</div>
+                            <div class="location">India • Remote</div>
                         </div>
+                        <div class="box2">
+                            <div class="company">CASIO India CO.</div>
+                            <div class="position">Campus Ambassador</div>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>Represented Casio India Co. at campus activities, significantly elevating
+                                brand awareness and fostering robust connections.</li>
+                            <li>
+                                Boosted product engagement via organized student events, promoting diverse Casio
+                                products and strengthening peer connections.</li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="fade-down" class="card">
                     <div class="box">
-                        <img src="Background_Images/Calculator_BG.png" alt="">
-                        <div class="text"><a class="projectTitle" href="http://freeonlinecalculator-96b65.web.app/"
-                                target=”_blank”>Calculator</a></div>
-                        <div class="buttons">
-                            <button class="btn">HTML</button>
-                            <button class="btn">CSS</button>
-                            <button class="btn">JavaScript</button>
-                            <button class="btn">JQuery</button>
-                            <button class="btn">DOM</button>
+                        <div class="box1">
+                            <div class="duration">Jun 2023 - Jul 2023</div>
+                            <div class="location">India • Remote</div>
                         </div>
+                        <div class="box2">
+                            <div class="company">Info AidTech</div>
+                            <div class="position">MERN Stack Developer</div>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>Represented Casio India Co. at campus activities, significantly elevating
+                                brand awareness and fostering robust connections.</li>
+                            <li>
+                                Boosted product engagement via organized student events, promoting diverse Casio
+                                products and strengthening peer connections.</li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="fade-left" class="card">
                     <div class="box">
-                        <img src="Background_Images/To_Do_List_BG.jpg" alt="">
-                        <div class="text"><a class="projectTitle" href="https://todolist555.web.app" target=”_blank”>To
-                                Do List</a></div>
-                        <div class="buttons">
-                            <button class="btn">HTML</button>
-                            <button class="btn">CSS</button>
-                            <button class="btn">JavaScript</button>
-                            <button class="btn">JQuery</button>
-                            <button class="btn">DOM</button>
+                        <div class="box1">
+                            <div class="duration">Feb 2023 - Mar 2023</div>
+                            <div class="location">India • Remote</div>
                         </div>
-                    </div>
-                </div>
+                        <div class="box2">
+                            <div class="company">Code Clause</div>
+                            <div class="position">Full Stack Developer</div>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>Key contributor in the end-to-end development process, adept in both front-end
+                                (React.js) and back-end (Node.js, Express.js) technulogies for seamless web application
+                                delivery.</li>
+                            <li>Designed and optimized database structures using MongoDB, enhancing query response times
+                                and overall system efficiency.
+                            </li>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="Background_Images/Spotify_Clone_BG.jpg" alt="">
-                        <div class="text"><a class="projectTitle" href="https://onlysong.netlify.app/"
-                                target=”_blank”>Spotify Clone</a></div>
-                        <div class="buttons">
-                            <button class="btn">HTML</button>
-                            <button class="btn">CSS</button>
-                            <button class="btn">JavaScript</button>
-                            <button class="btn">JQuery</button>
-                            <button class="btn">DOM</button>
-                        </div>
+                        </ul>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="/Background_Images/Note_Keeper_BG.jpg" alt="">
-                        <div class="text"><a class="projectTitle" href="https://workscheduler.netlify.app/"
-                                target=”_blank”>Note Keeper</a></div>
-                        <div class="buttons">
-                            <button class="btn">HTML</button>
-                            <button class="btn">CSS</button>
-                            <button class="btn">JavaScript</button>
-                            <button class="btn">JQuery</button>
-                            <button class="btn">DOM</button>
+                    <div data-aos="fade-right" class="box">
+                        <div class="box1">
+                            <div class="duration">Feb 2023 - Mar 2023</div>
+                            <div class="location">India • Remote</div>
                         </div>
+                        <div class="box2">
+                            <div class="company">Let's Grow More</div>
+                            <div class="position">Web Developer</div>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>Innovatively engineered two dynamic frontend web applications at Let's Grow More,
+                                merging creativity with seamless functionality</li>
+                            <li>
+                                Translated client requirements into visually stunning interfaces, using advanced design
+                                methodologies for enhanced user engagement.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="card">
+                    <div class="box">
+                        <div class="box1">
+                            <div class="duration">Jan 2023 - Feb 2023</div>
+                            <div class="location">India • Remote</div>
+                        </div>
+                        <div class="box2">
+                            <div class="company">Oasis Infobyte</div>
+                            <div class="position">Web Designer</div>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>Spearheaded the conceptualization and development of two cutting-edge frontend web
+                                applications for Oasis Infobyte.</li>
+                            <li>Crafted visually captivating interfaces, seamlessly blending innovative design
+                                principles to deliver an unparalleled user experience.</li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
 
     <!-- contact section start -->
     <section class="contact" id="contact">
-        <div class="max-width">
+        <div data-aos="fade-up" class="max-width">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
-                <div class="column left">
+                <div data-aos="fade-right" class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga
-                        corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>
+                        Ready to turn your ideas into reality. Let's chat about your project and how I can create a
+                        digital sulution tailored to your needs. Connect with me to start your online journey.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -376,25 +588,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                <div data-aos="fade-left" class="column right">
                     <div class="text">Message me</div>
-                    <form action="/" method="post">
+                    <form id="contactForm"  onsubmit="sendEmail()" >
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" name="name" required>
+                                <input type="text" id="contactName" placeholder="Name" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" name="email" required>
+                                <input type="email" id="contactEmail" placeholder="Email" name="email" required>
                             </div>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" name="subject" required>
+                        <div class="field subject">
+                            <input type="text" id="contactSubject" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
+                            <textarea culs="30" id="contactMessage" rows="10" placeholder="Message.." name="message" required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
+                            <button type="submit" >Send message</button>
                         </div>
                     </form>
                 </div>
@@ -407,18 +619,34 @@
         <div class="text1">Get in Touch</div>
         <div class="text2">Connect With Me</div>
         <div class="icons">
-            <a href="https://www.linkedin.com/in/rushikesh-biradar-aa4a8225b/" target="_blank"><i
-                    class="fab fa-2x fa-linkedin"></i></a>
-            <a href="https://github.com/rishikeshbiradar" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-            <a href="https://www.instagram.com/rushisb.55/"><i class="fab fa-2x fa-instagram" target="_blank"></i></a>
-            <a href=""><i class="fab fa-2x fa-twitter" target="_blank"></i></a>
-
+            <a href="https://github.com/rishikeshbiradar" target="_blank" rel="noopener noreferrer"><img
+                    src="Profile_Icons/Github.png" class="Profile_Icons" style="height: 25px;width: 25px;" alt=""></a>
+            <a href="https://www.linkedin.com/in/rushikesh-biradar-1b620722a/" target="_blank"
+                rel="noopener noreferrer"><img src="Profile_Icons/Linkedin.png" class="Profile_Icons" alt=""></a>
+            <a href="mailto:rushisb.55@gmail.com?subject=Portfulio%20Inquiry" target="_blank"
+                rel="noopener noreferrer"><img src="Profile_Icons/Gmail.png" class="Profile_Icons" alt=""></a>
+            <a href="https://www.instagram.com/rushisb.55" target="_blank" rel="noopener noreferrer"><img
+                    src="Profile_Icons/Instagram.png" class="Profile_Icons" alt=""></a>
         </div>
-        <span>Copyright <span class="far fa-copyright"></span> <a href="https://github.com/rishikeshbiradar/portofolio"
+        <span>Copyright <span class="far fa-copyright"></span> <a href="https://rushikeshbiradar.netlify.app"
                 target="_blank">Rushikesh Biradar</a> | 2023 All rights reserved.</span>
     </footer>
 
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Rushikesh Biradar",
+            "jobTitle": "Software Developer & Full Stack Developer",
+            "url": "https://rushikeshbiradar.netlify.app",
+            "sameAs": [
+                "https://www.linkedin.com/in/rushikesh-biradar-1b620722a",
+                "https://github.com/rishikeshbiradar"
+            ]
+        }
+    </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 

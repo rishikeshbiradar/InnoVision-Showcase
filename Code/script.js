@@ -1,4 +1,10 @@
-$(document).ready(function(){
+AOS.init({
+    duration: 500,  // Animation duration in milliseconds
+    delay: 600,     // Delay before the animation starts in milliseconds
+    easing: 'ease-in-out',  // Easing function for the animation
+});
+
+$(document).ready(function () {
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
@@ -35,14 +41,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["a Designer", "a Developer", "an Engineer", "a Freelancer", "a Student"],
+        strings: ["a Designer", "a Developer", "a Freelancer","an Engineer", "a Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings:  ["a Designer", "a Developer", "an Engineer", "a Freelancer", "a Student"],
+        strings:  ["a Designer", "a Developer", "a Freelancer","an Engineer", "a Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -71,3 +77,34 @@ $(document).ready(function(){
         }
     });
 });
+
+// EmailJS Code
+
+emailjs.init("vLC2S4hStmLBKRmE0");
+
+function sendEmail() {
+    var formData = {
+        user_name: document.getElementById("contactName").value,
+        user_email: document.getElementById("contactEmail").value,
+        user_subject: document.getElementById("contactSubject").value,
+        message: document.getElementById("contactMessage").value
+    };
+
+    console.log(formData)
+
+    emailjs.send("service_eif8pzh", "template_y3vdh7x", formData)
+        .then(function(response) {
+            console.log("Email sent successfully:", response);
+
+        })
+        .catch(function(error) {
+            console.log("Email failed to send:", error);
+
+        });
+    
+        alert('Thank You! \nYour Response has been Submitted Successfully \n');
+}
+
+
+// College : 'service_md63xlb'  'template_asd1ha8'  'Amcak7Tpn5maKifuh'
+// Personal : 'service_eif8pzh' 'template_y3vdh7x' 'vLC2S4hStmLBKRmE0'
